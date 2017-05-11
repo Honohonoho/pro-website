@@ -7,7 +7,7 @@ define(['lib/jquery-3.2.1.min'],function(){
 
 	$(".btn").on("click",function(e){
         e.preventDefault(); //防止点击 a 链接页面跳到顶部
-        $.get("/loadMore",{index: ctIndex,length: 3}).done(function(e){
+        $.get("/loadImage",{index: ctIndex,length: 3}).done(function(e){
             if(e.status === 0){  //status的值要约定一致
                 appendHtml(e.data,ctIndex);
                 ctIndex += 3;

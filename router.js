@@ -1,4 +1,4 @@
-app.get("/loadMore", function(req,res){
+app.get("/loadImage", function(req,res){
 	var idx = req.query.index;
 	var len = req.query.length;
 	var data = [];
